@@ -57,10 +57,12 @@ parser.add_argument("--nodename", default=platform.node(),
                     help="Hostname to use when submitting data (default: %(default)s)")
 
 args = parser.parse_args(remaining)
-
 samplerate = 48000
 
 fftsize = 2048
+
+TAGS["nodename"] = args.nodename
+
 
 client = InfluxDBClient(host=args.server)
 client.create_database(args.database)

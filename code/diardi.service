@@ -1,0 +1,9 @@
+[Unit]
+Description=Diardi sound level to InfluxDB sender
+
+[Service]
+ExecStart=/usr/local/bin/diardi.py --server=acuity.somerset
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
