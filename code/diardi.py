@@ -120,7 +120,7 @@ def callback(indata, frames, time, status):
 
         frame_queue.append({
             "measurement": args.measurement_name + "_error",
-            "fields": { "status_text": status, },
+            "fields": { "status_text": str(status), },
             "tags": errtags,
             "time": ts,
             })
