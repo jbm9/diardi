@@ -1,0 +1,19 @@
+*.pyc
+
+####################
+# Temporary files
+*~
+*.swp
+\#*\#
+.\#*
+
+####################
+# Coverage stuff
+.coverage
+htmlcov/
+
+####################
+# python build
+build/
+
+
